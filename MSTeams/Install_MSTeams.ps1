@@ -53,10 +53,7 @@ function Uninstall-ClassicTeams
 # Function to install new Microsoft Teams
 function Install-NewTeams
 {
-    # either script to download and install the MSTeams installer from the web.
-
-    #or incase of intine point to to the intunewin file.
-
+  Start-Process -FilePath ".\teamsbootstrapper.exe" -ArgumentList "-p" -Wait -PassThru -ErrorAction STOP
 }
 
 
